@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python安装第三方库报错</title>
+    <url>/2020/02/12/python%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<h1 id="记录一次安装库过程"><a href="#记录一次安装库过程" class="headerlink" title="记录一次安装库过程"></a>记录一次安装库过程</h1><p>大致学完python基础，准备做一个小项目————图片转化为字符画，需要安装pillow库。结果这第一步就把我难下了，之前也安装过其他第三方库requests之类的，没遇到过任何问题。看了报错，控制台一大串显红的，人都晕了，有文件名，什么文件那一行报错，之类的，看半天大致是阅读超时，read timed out，把他理解为下载超时吧。<a id="more"></a>想来原因大概是梯子挂了，pip下载速度又慢，导致超时的。<br>看网上，解决方法很多，有直接网上下载库文件，放在python/scripts文件夹里，还有找个国内网站的源下载安装。不过我看到最简单的方法，并且有效是设置超时时间。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python -m pip --default-timeout&#x3D;100 install -U Pillow</span><br></pre></td></tr></table></figure>
+<p>记下来，说不定之后还会用到，不常用的东西会常忘记。今天发现python我安装在哪个盘都忘了。</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生查子·元夕</title>
     <url>/2020/02/08/%E7%94%9F%E6%9F%A5%E5%AD%90%C2%B7%E5%85%83%E5%A4%95/</url>
     <content><![CDATA[<p><em>北宋 · 欧阳修</em></p>
