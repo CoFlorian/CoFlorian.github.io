@@ -242,6 +242,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -436,6 +437,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '2fd948402e9deb159ed2',
+      clientSecret: '367469233304371a5c1fc0c7a2ef7256a5863268',
+      repo: 'CoFlorian.github.io',
+      owner: 'CoFlorian',
+      admin: ['CoFlorian'],
+      id: 'a676607444a8bc8b150c9a3aff884e61',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
